@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<odoo>
+<!-- menu Master -->
+    <record id="estate_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Master</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate_property2_action" model="ir.actions.act_window">
+        <field name="name">Estate Property  Master  1</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate_property3_action" model="ir.actions.act_window">
+        <field name="name">Estate Property  Master  2</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+<!-- menu Transaction -->
+    <record id="estate2_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Transaction</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate2_property2_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Transaction 2</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate2_property3_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Transaction 3</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="estate2_property4_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Transaction  4</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!-- menu Advertisement -->
+    <record id="estate3_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement </field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property2_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 2</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property3_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 3</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property4_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 4</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property5_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 5</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property6_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 6</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate3_property7_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Advertisement 7</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!-- menu Report -->
+    <record id="estate4_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 1 </field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property2_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 2</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property3_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 3</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property4_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 4</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property5_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 5</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property6_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 6</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate4_property7_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Report 7</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!-- menu Setting -->
+    <record id="estate5_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 1 </field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property2_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 2</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property3_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 3</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property4_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 4</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property5_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 5</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property6_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 6</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="estate5_property7_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Setting 7</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
