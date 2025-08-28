@@ -6,16 +6,17 @@ CONTAINER_DB=odoo-postgres
 
 help:
 	@echo " Available Target"
-	@echo " Start     Start the compose with daemon"
-	@echo " PS        View Status  with daemon"
-	@echo " Pause     Pause the compose with daemon"
-	@echo " UnPause   UnPause the compose with daemon"
-	@echo " Stop      Stop the compose with daemon"
-	@echo " Restart   Restart the compose with daemon"
-	@echo " Console   Odoo interactive console"
-	@echo " Psql      Postgresql interactive shell"
-	@echo " Logs Odoo log_target TARGET=odoo for Logs the Odoo Container "
-	@echo " Logs DB   log_target TARGET=db for Logs the Database Container "
+	@echo " Start     			Start the compose with daemon"
+	@echo " PS        			View Status  with daemon"
+	@echo " Pause     			Pause the compose with daemon"
+	@echo " UnPause   			UnPause the compose with daemon"
+	@echo " Stop      			Stop the compose with daemon"
+	@echo " Restart   			Restart the compose with daemon"
+	@echo " Console   			Odoo interactive console"
+	@echo " Psql      			Postgresql interactive shell"
+	@echo " Logs Odoo 			log_target TARGET=odoo for Logs the Odoo Container "
+	@echo " Logs DB   			log_target TARGET=db for Logs the Database Container "
+	@echo " addon TARGET=<addon_name>	Restart instance and upgrade addon "
 	
 
 start:
@@ -36,6 +37,13 @@ stop:
 restart:
 	$(DOCKER_COMPOSE) restart
 
+define upgrade_addon
+	$(DOCKER) exec -it $(CONTAINER_ODOO) odoo --db_host=$(CONTAINER_DB) -d $(WEB_DB_NAME) -r $(CONTAINER_ODOO) -w $(CONTAINER_ODOO) -u $(TARGET)
+endef
+
+addon: restart
+	$(call upgrade_addon,$(word,2,$(MAKECMDGOALS)))
+
 console:
 	$(DOCKER) exec -it $(CONTAINER_ODOO) odoo shell --db_host=$(CONTAINER_DB) -d $(WEB_DB_NAME) -r $(CONTAINER_ODOO) -w $(CONTAINER_ODOO)
 
@@ -54,4 +62,4 @@ log_target:
 
 
   
-.PHONY: start stop restart console psql logs odoo db
+.PHONY: start stop restart console psql logs odoo db addon
