@@ -41,7 +41,7 @@
     </record>
 <!-- menu Advertisement -->
     <record id="estate3_property_action" model="ir.actions.act_window">
-        <field name="name">Estate Property Advertisement </field>
+        <field name="name">Estate Properties </field>
         <field name="res_model">estate.property</field>
         <field name="view_mode">list,form</field>
     </record>
