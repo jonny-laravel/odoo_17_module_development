@@ -1,0 +1,71 @@
+<odoo>
+    <!-- Transaction -->
+    <record id="trans_daftar_anggota_action" model="ir.actions.act_window">
+        <field name="name">Daftar Anggota</field>
+        <field name="res_model">trans.daftar.anggota</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Transaksi Daftar Anggota MODEL --> 
+    <!-- Search & Filter -->
+    <record id="trans_daftar_anggota_view_search" model="ir.ui.view">
+        <field name="name">trans.daftar.anggota.view.search</field>
+        <field name="model">trans.daftar.anggota</field>
+        <field name="arch" type="xml">
+            <search>
+                
+                <field name="nama_keluarga"  />
+                <field name="marga_id" />
+                <field name="is_anggota_aktif" />
+                <field name="jenis_kelamin" />
+                <field name="status_anggota" />
+            </search>
+        </field>
+    </record>
+
+    <!-- view tree -->
+    <record id="trans_daftar_anggota_view_tree" model="ir.ui.view">
+        <field name="name">trans.daftar.anggota.view.tree</field>
+        <field name="model">trans.daftar.anggota</field>
+        <field name="arch" type="xml">
+           <tree>
+                <field name="nama_keluarga"  />
+                <field name="marga_id" />
+                <field name="is_anggota_aktif" />
+                <field name="jenis_kelamin" />
+                <field name="status_anggota" />
+                <field name="active" groups="base.group_no_one"/> 
+
+            </tree> 
+        </field>
+    </record>
+    <!-- Form  -->
+    <record id="trans_daftar_anggota_view_form" model="ir.ui.view">
+        <field name="name">trans.daftar.anggota.view.form</field>
+        <field name="model">trans.daftar.anggota</field>
+        <field name="arch" type="xml">
+            <form string= "Daftar Marga">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="nama_keluarga"/> </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="marga_id"/> 
+                            <field name="jenis_kelamin"/> 
+                            <field name="status_anggota"/> 
+                        </group>
+                        <group>
+                            <field name="status_anggota"/> 
+                            <field name="is_anggota_aktif"/> 
+                        </group>
+                        <group>
+                            <field name="active" groups="base.group_no_one"/> 
+                        </group>
+                    </group>
+                    
+                </sheet>
+            </form > 
+        </field>
+    </record>
+</odoo>

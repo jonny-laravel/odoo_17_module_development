@@ -29,14 +29,14 @@
             <menuitem id="estate4_property6_menu_action" action="estate4_property6_action"/>
             <menuitem id="estate4_property7_menu_action" action="estate4_property7_action"/>
         </menuitem>
-        <menuitem id="estate_property_5first_level_menu" name="Setting">
-            <menuitem id="estate5_property_menu_action" action="estate5_property_action"/>
-            <menuitem id="estate5_property2_menu_action" action="estate5_property2_action"/>
-            <menuitem id="estate5_property3_menu_action" action="estate5_property3_action"/>
+        <menuitem id="estate_property_5first_level_menu" name="Settings">
+            <menuitem id="estate_property_type_menu_action" action="estate_property_type_action"/>
+            <menuitem id="estate_property_tag_menu_action" action="estate_property_tag_action"/>
+            <!-- <menuitem id="estate5_property3_menu_action" action="estate5_property3_action"/>
             <menuitem id="estate5_property4_menu_action" action="estate5_property4_action"/>
             <menuitem id="estate5_property5_menu_action" action="estate5_property5_action"/>
             <menuitem id="estate5_property6_menu_action" action="estate5_property6_action"/>
-            <menuitem id="estate5_property7_menu_action" action="estate5_property7_action"/>
+            <menuitem id="estate5_property7_menu_action" action="estate5_property7_action"/> -->
         </menuitem>
     </menuitem>
 </odoo>

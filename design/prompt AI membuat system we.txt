@@ -1,0 +1,7 @@
+prompt AI membuat system web aplikasi komunitas
+context :Ingin membuat flow design untuk system aplikasi web dengan platform ERP Odoo akan dipergunakan komunitas marga batak dari level 1 sampai level terakhir dengan penjelasan system sebagai berikut: 
+- system input data master menampung data kartu keluarga anggota komunitas yang lengkap sampai dengan urutan silsilah keluarga suatu komunitas batak
+- system input data transaksi uang pemasukan dengan membayar iuran wajib setiap kepala keluarga tiap bulan, dan sumbangan sukarela lainnya dari anggota
+- system input data transaksi pemmberian uang duka bagi anggota keluarga yang meninggal
+- system laporan pemasukan uang dan pengeluaran uang secara detail dan lengkap
+- laporan keuangan sederhana secara detail dan lengkap

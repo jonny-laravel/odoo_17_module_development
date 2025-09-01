@@ -1,0 +1,42 @@
+<odoo>
+    <!-- MASTER MARGA MODEL --> 
+    <!-- Search & Filter -->
+    <record id="master_marga_view_search" model="ir.ui.view">
+        <field name="name">master.marga.view.search</field>
+        <field name="model">master.marga</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="marga" />
+                
+            </search>
+        </field>
+    </record>
+
+    <!-- view tree -->
+    <record id="master_marga_view_tree" model="ir.ui.view">
+        <field name="name">master.marga.view.tree</field>
+        <field name="model">master.marga</field>
+        <field name="arch" type="xml">
+           <tree>
+                <field name="marga" />
+                <field name="active" groups="base.group_no_one"/> 
+
+            </tree> 
+        </field>
+    </record>
+    <!-- Form  -->
+    <record id="master_marga_view_form" model="ir.ui.view">
+        <field name="name">master.marga.view.form</field>
+        <field name="model">master.marga</field>
+        <field name="arch" type="xml">
+            <form string= "Daftar Marga">
+                <sheet>
+                    <group>"
+                         <field name="marga"/>     
+                    </group>
+                    
+                </sheet>
+            </form > 
+        </field>
+    </record>
+</odoo>
