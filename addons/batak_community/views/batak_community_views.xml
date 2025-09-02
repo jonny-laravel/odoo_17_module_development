@@ -5,18 +5,24 @@
         <field name="res_model">master.marga</field>
         <field name="view_mode">list,form</field>
     </record>
-    <record id="batak_community2_action" model="ir.actions.act_window">
+    <!-- <record id="batak_community2_action" model="ir.actions.act_window">
         <field name="name">Anggota Punguan</field>
         <field name="res_model">batak.community</field>
         <field name="view_mode">list,form</field>
-    </record>
+    </record> -->
 
-    <record id="batak_community3_action" model="ir.actions.act_window">
+    <!-- <record id="batak_community3_action" model="ir.actions.act_window">
         <field name="name">Master 3</field>
         <field name="res_model">batak.community</field>
         <field name="view_mode">list,form</field>
-    </record>
+    </record> -->
     <!-- Transaction -->
+    <!-- Transaction -->
+    <record id="trans_daftar_anggota_action" model="ir.actions.act_window">
+        <field name="name">Daftar Anggota</field>
+        <field name="res_model">trans.daftar.anggota</field>
+        <field name="view_mode">list,form</field>
+    </record>
     <record id="batak2_community_action" model="ir.actions.act_window">
         <field name="name">Daftar Anggota</field>
         <field name="res_model">trans.daftar.anggota</field>

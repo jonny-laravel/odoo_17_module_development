@@ -1,10 +1,5 @@
 <odoo>
-    <!-- Transaction -->
-    <record id="trans_daftar_anggota_action" model="ir.actions.act_window">
-        <field name="name">Daftar Anggota</field>
-        <field name="res_model">trans.daftar.anggota</field>
-        <field name="view_mode">list,form</field>
-    </record>
+    
 
     <!-- Transaksi Daftar Anggota MODEL --> 
     <!-- Search & Filter -->
@@ -62,6 +57,9 @@
                         <group>
                             <field name="active" groups="base.group_no_one"/> 
                         </group>
+                        <page string="Offer">                            
+                            <field name="anggota_keluarga_ids"/> 
+                        </page>
                     </group>
                     
                 </sheet>

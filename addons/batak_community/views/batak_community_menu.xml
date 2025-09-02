@@ -2,13 +2,12 @@
     <menuitem id="batak_community_root" name="Batak Community">
         <menuitem id="batak_community_first_level_menu" name="Master">
             <menuitem id="batak_community_menu_action" action="batak_community_action"/> 
-            <menuitem id="batak_community2_menu_action" action="batak_community2_action"/> 
-            <menuitem id="batak_community3_menu_action" action="batak_community3_action"/> 
+            <!-- <menuitem id="batak_community2_menu_action" action="batak_community2_action"/> 
+            <menuitem id="batak_community3_menu_action" action="batak_community3_action"/>  -->
         </menuitem>
         <menuitem id="batak_community2_first_level_menu" name="Transaction">
-            <menuitem id="batak2_community_menu_action" action="batak2_community_action"/> 
-            <menuitem id="batak2_community2_menu_action" action="batak2_community2_action"/> 
-            <menuitem id="batak2_community3_menu_action" action="batak2_community3_action"/> 
+            <menuitem id="trans_daftar_anggota_menu_action" action="trans_daftar_anggota_action"/>
+             <!-- <menuitem id="batak2_community_menu_action" action="batak2_community_action"/>  -->
         </menuitem>
         <menuitem id="batak_community3_first_level_menu" name="Report">
             <menuitem id="batak3_community_menu_action" action="batak3_community_action"/> 
