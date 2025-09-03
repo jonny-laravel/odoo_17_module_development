@@ -1,6 +1,7 @@
 from odoo import api,fields,models
 from datetime import timedelta
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError,ValidationError
+from odoo.tools.float_utils import float_is_zero,float_compare
 
 class EstatePropertyOffer(models.Model):
     _name="estate.property.offer"
@@ -17,6 +18,11 @@ class EstatePropertyOffer(models.Model):
     validity=fields.Integer(default=7,copy=False,string="Validity (days)")
     date_deadline=fields.Date(copy=False, compute="_compute_date_deadline",inverse="_inverse_date_deadline",string="DeadLine Date")
 
+    _sql_constraints = [
+        ('check_price_positive', 'CHECK(price >0)',
+         'The Offer Price must be strictly positive Amount.')
+    ]
+
     @api.depends("create_date","validity")
     def _compute_date_deadline(self):
         for record in self:
@@ -32,6 +38,7 @@ class EstatePropertyOffer(models.Model):
             else:
                 record.validity=(record.date_deadline-fields.Date.today()).days
     def action_accept(self):
+        precision=2
         for record in self :
             if record.property_id.state=="sold":
                 raise UserError("Cannot Offer be Acccepted for Property is Sold!")
@@ -42,6 +49,9 @@ class EstatePropertyOffer(models.Model):
             record.status="accepted"
             record.property_id.state="sold"
             record.property_id.buyer_id=record.partner_id
+            if not float_is_zero( record.price,precision_digits=precision):
+                if float_compare( record.price,0.9 *  record.property_id.expected_price,precision_digits=precision )<0:
+                    raise ValidationError(f"Selling Price cannot be lower than 90 percent of  Expected Price :   {0.9 * record.property_id.expected_price}")
             record.property_id.selling_price=record.price
 
         return True
